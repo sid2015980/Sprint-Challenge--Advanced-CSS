@@ -154,26 +154,21 @@ h5 {
 }
 h1 {
   font-size: 4rem;
-  font-size: 2.5rem;
 }
 h2 {
   font-size: 3.2rem;
-  font-size: 2rem;
 }
 h3 {
   font-size: 2.8rem;
-  font-size: 1.8rem;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-  font-size: 1.2rem;
 }
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  width: 90%;
 }
 .space-walk {
   width: 100%;
@@ -184,6 +179,11 @@ p {
   align-items: center;
   margin-bottom: 5%;
   background-color: #F6F6F6;
+}
+@media (max-width: 500px) {
+  .space-walk {
+    margin-top: -20px;
+  }
 }
 .space-walk .nav-links {
   display: flex;
@@ -221,6 +221,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home img {
+    width: 100%;
+    height: 15vh;
+    margin-top: -26px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -228,25 +235,42 @@ footer {
   padding: 0 15px;
 }
 .home .intro img {
+  width: 100%;
   margin: 0 auto;
   margin-top: -39px;
   padding-left: 1%;
   padding-right: 1%;
-  margin-top: -20px;
-  width: 100%;
-  margin-left: -50px;
-  margin-right: -50px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    display: none;
+  }
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -264,8 +288,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -289,9 +326,22 @@ footer {
   background-color: #F1F1F1;
   color: #22283A;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 60px;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: -4%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
