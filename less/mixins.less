@@ -1,1 +1,27 @@
 // Mixins Here
+
+.margin{
+    margin-right: 20px;
+}
+.border{
+    border-top: 4%;
+    border-bottom: 4%;
+}
+
+.my-button(@btn-bg-color, @width, @btn-fnt-color) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:@btn-bg-color;
+    cursor: pointer;
+    width:@width;
+    height: 30px;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    color:@btn-fnt-color;
+
+    &:hover{
+        background-color:@btn-fnt-color;
+        color:@btn-bg-color;
+    }
+}

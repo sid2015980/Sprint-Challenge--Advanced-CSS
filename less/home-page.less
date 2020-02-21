@@ -1,17 +1,28 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: -39px;
+      padding-left: 1%;
+      padding-right: 1%;
+
+      @mobile: ~"(max-width: 500px)";
+      margin-top: -20px;
+      width: 100%;
+      margin-left: -50px;
+      margin-right: -50px;
+    }
   }
 
   .space-images {
@@ -58,13 +69,14 @@
       }
 
       .btn {
+        .my-button(@btn-bg-color, @width, @btn-fnt-color);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +84,4 @@
       }
     }
   }
-}// home
+} // home
