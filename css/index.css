@@ -186,7 +186,7 @@ p {
 }
 @media (max-width: 500px) {
   .space-walk {
-    margin-top: -20px;
+    margin-top: 5px;
   }
 }
 .space-walk .nav-links {
@@ -234,7 +234,7 @@ footer {
   .home .two {
     width: 100%;
     height: 15vh;
-    margin-top: -26px;
+    margin-top: -15px;
   }
 }
 .home .intro h2 {
