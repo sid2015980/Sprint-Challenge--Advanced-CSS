@@ -6,13 +6,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // margin:4% 0;
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    opacity: 80%;
     margin-bottom: 5%;
-    background-color: @wild-sand;
+    background-color:  @wild-sand;
+
     @media @mobile{
         margin-top:-20px;
         }
-    
 
     .nav-links{
         display: flex;
@@ -22,6 +25,7 @@
         align-content: center;
         width:100%;
         margin-top: 4%;
+        
 
         .home{
             .margin();

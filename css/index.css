@@ -177,6 +177,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  opacity: 80%;
   margin-bottom: 5%;
   background-color: #F6F6F6;
 }
